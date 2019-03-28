@@ -9,7 +9,7 @@ This software implements a number of lossless smart meter data compression algor
 
 These papers are also available as BibTeX entries in the [papers.bib file](papers.bib) for convenience.
 
-This software comes with no warranty whatsoever. You may use it without charge, as long as the original copyright notices remain and the papers listed above are cited. See [LICENSE file](LICENSE) for details.
+This software comes with no warranty whatsoever. You may use it without charge, as long as the original copyright notices remain and the papers listed above are cited. See the [LICENSE file](LICENSE) for details.
 
 How to build the software
 =========================
