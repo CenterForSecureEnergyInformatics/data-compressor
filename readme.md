@@ -1,4 +1,4 @@
-Data compressor - Framework for smart meter compression algorithms
+Data Compressor - Framework for smart meter compression algorithms
 ==================================================================
 
 This software implements a number of lossless smart meter data compression algorithms and can also be used to evaluate them. If you use this software, please cite
