@@ -7,7 +7,9 @@ This software implements a number of lossless smart meter data compression algor
 
 [2] Andreas Unterweger, Dominik Engel, and Martin Ringwelski. The Effect of Data Granularity on Load Data Compression. In Energy Informatics 2015 - 4th D-A-CH Conference, EI 2015, volume 9424 of Lecture Notes in Computer Science, pages 69-80. Springer International Publishing, Switzerland, November 2015.
 
-This software comes with no warranty whatsoever. You may use it without charge, as long as the original copyright notices remain and the papers listed above are cited. See LICENSE file for details.
+These papers are also available as BibTeX entries in the [papers.bib file](papers.bib) for convenience.
+
+This software comes with no warranty whatsoever. You may use it without charge, as long as the original copyright notices remain and the papers listed above are cited. See [LICENSE file](LICENSE) for details.
 
 How to build the software
 =========================
