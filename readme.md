@@ -25,7 +25,7 @@ How to use the software
 
 The front-end of the software is DCCLI, a command line interface for Data Compressor, which resides in the folder named DCCLI. There is a short description of the software in [DCCLI/doc/overview.txt](DCCLI/doc/overview.txt). Apart from that, the software itself outputs notes on usage when called without arguments or with incorrect ones.
 
-Always use the release version of the software when evaluating algorithms. On Linux, you can use `make test` in either [build/gcc](build/gcc) or [DCCLI/build/gcc](DCCLI/build/gcc) to compress the supplied test file with the DEGA algorithm [1] and decompress it again for verification.
+Always use the release version of the software when evaluating algorithms. On Linux, you can use `make test` in either [build/gcc/](build/gcc/) or [DCCLI/build/gcc/](DCCLI/build/gcc/) to compress the supplied test file with the DEGA algorithm [1] and decompress it again for verification.
 
 Here are some example calls for the evaluation from [2] for the MIT REDD data set, where each channel is first pre-processed using
 
@@ -47,7 +47,7 @@ How to use the software on less powerful hardware
 
 The software allows specifying small(er) bit sizes for I/O and processing.
 
-For I/O, the option `IO_SIZE_BITS` documented in [common/doc/overview.txt](common/doc/overview.txt) can be set to reduce the I/O bit size. On Linux, you can set `IO_SIZE_BITS` in [common/build/gcc](common/build/gcc) to a corresponding value for convenience. In the debug version of the software, the number of usable bits for I/O is printed on application startup.
+For I/O, the option `IO_SIZE_BITS` documented in [common/doc/overview.txt](common/doc/overview.txt) can be set to reduce the I/O bit size. On Linux, you can set `IO_SIZE_BITS` in [common/build/gcc/](common/build/gcc/) to a corresponding value for convenience. In the debug version of the software, the number of usable bits for I/O is printed on application startup.
 
 For processing, most encoders/decoders have parameters like the block size or the value size (in bits). The parameters of each encoder are described in [DCLib/doc/overview.txt](DCLib/doc/overview.txt). Other parameters like memory buffer sizes are documented in [DCCLI/doc/overview.txt](DCCLI/doc/overview.txt).
 
@@ -55,7 +55,7 @@ For processing, most encoders/decoders have parameters like the block size or th
 How to modify the software
 ==========================
 
-The software is split into separate projects with an according folder structure. Each project has a short description in `$project_name/doc/overview.txt`. `$projectname` DCCLI is the Data Compressor command line interface for the data compression library, DCLib, which uses the I/O library DCIOLib. The commonly shared code can be found in the folder [common](common).
+The software is split into separate projects with an according folder structure. Each project has a short description in `$project_name/doc/overview.txt`. `$projectname` DCCLI is the Data Compressor command line interface for the data compression library, DCLib, which uses the I/O library DCIOLib. The commonly shared code can be found in the folder [common/](common/).
 
 When modifying the software, make sure to build the debug versions of all projects. In Visual Studio, this can be done by choosing the Debug configuration and rebuilding the solution. With GNU make, `make debug` builds a debug version.
 
