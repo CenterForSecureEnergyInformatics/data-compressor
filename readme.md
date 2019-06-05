@@ -23,7 +23,7 @@ This software has been tested on Intel x86-64 and ARM v7 precessors (Raspberry P
 How to use the software
 =======================
 
-The front-end of the software is DCCLI, a command line interface for Data Compressor, which resides in the folder named DCCLI. There is a short description of the software in [DataCompressor/DCCLI/doc/overview.txt](DataCompressor/DCCLI/doc/overview.txt). Apart from that, the software itself outputs notes on usage when called without arguments or with incorrect ones.
+The front-end of the software is DCCLI, a command line interface for Data Compressor, which resides in the folder named DCCLI. There is a short description of the software in [DataCompressor/DCCLI/doc/readme.md](DataCompressor/DCCLI/doc/readme.md). Apart from that, the software itself outputs notes on usage when called without arguments or with incorrect ones.
 
 Always use the release version of the software when evaluating algorithms. On Linux, you can use `make test` in either [DataCompressor/build/gcc/](DataCompressor/build/gcc/) or [DataCompressor/DCCLI/build/gcc/](DataCompressor/DCCLI/build/gcc/) to compress the supplied test file with the DEGA algorithm [1] and decompress it again for verification.
 
@@ -49,7 +49,7 @@ The software allows specifying small(er) bit sizes for I/O and processing.
 
 For I/O, the option `IO_SIZE_BITS` documented in [DataCompressor/common/doc/overview.txt](DataCompressor/common/doc/overview.txt) can be set to reduce the I/O bit size. On Linux, you can set `IO_SIZE_BITS` in [DataCompressor/common/build/gcc/](DataCompressor/common/build/gcc/) to a corresponding value for convenience. In the debug version of the software, the number of usable bits for I/O is printed on application startup.
 
-For processing, most encoders/decoders have parameters like the block size or the value size (in bits). The parameters of each encoder are described in [DataCompressor/DCLib/doc/overview.txt](DataCompressor/DCLib/doc/overview.txt). Other parameters like memory buffer sizes are documented in [DataCompressor/DCCLI/doc/overview.txt](DataCompressor/DCCLI/doc/overview.txt).
+For processing, most encoders/decoders have parameters like the block size or the value size (in bits). The parameters of each encoder are described in [DataCompressor/DCLib/doc/readme.md](DataCompressor/DCLib/doc/readme.md). Other parameters like memory buffer sizes are documented in [DataCompressor/DCCLI/doc/readme.md](DataCompressor/DCCLI/doc/readme.md).
 
 
 How to modify the software
